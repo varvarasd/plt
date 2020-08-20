@@ -12,6 +12,6 @@ describe('Layout', () => {
               .find('Helmet')
               .find('title')
               .text()
-          ).toEqual('Some Title - PLT')
+          ).toEqual('Some Title')
     });
 });

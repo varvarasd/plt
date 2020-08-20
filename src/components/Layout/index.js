@@ -5,8 +5,8 @@ import { Helmet } from 'react-helmet-async';
 const Layout = ({title, description, children}) => {
     return <main>
         <Helmet>
-            <title>{ title ? `${title} - PLT` : "PLT" }</title>
-            <meta name="description" content={ description ? `${description} - PLT` : "PLT" } />
+            <title>{title}</title>
+            <meta name="description" content={description} />
         </Helmet>
         {children}
     </main>

@@ -1,10 +1,7 @@
 import React from 'react';
-import classNames from 'classnames';
 
 export const Button = ({classes, action, children}) => {
-    const buttonClasses = classNames('button', {
-        'button__remove': classes
-    })
+    const buttonClasses = classes ? `button ${classes}` : 'button';
     return <button 
         onClick={action} 
         className={buttonClasses}>
